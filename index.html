@@ -30,7 +30,7 @@
 
 
     <!-- PWA -->
-    <link href="/manifest.json" rel="manifest" />
+    <link href="/manifest.webmanifest" rel="manifest" />
     <script>
         navigator.serviceWorker.register('sw.js', {
             type: 'module'
@@ -70,20 +70,21 @@
         <div class="loader-spinner"></div>
     </div>
     <!-- Back To Top Button -->
-    <button id="backToTop" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></button>
+    <button id="backToTop" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
 
     <!-- Top Bar -->
     <div class="top-bar">
         <div class="container d-flex justify-content-between align-items-center">
             <div>
-                <i class="fas fa-phone me-2"></i><a href="tel:+0449200169">0449200169</a>
+                <i class="fas fa-phone me-2"></i><a title="Contact No" href="tel:+0449200169">0449200169</a>
                 <span class="mx-2">|</span>
-                <i class="fas fa-envelope me-2"></i><a href="mailto:info@ggcokara.edu.pk">info@ggcokara.edu.pk</a>
+                <i class="fas fa-envelope me-2"></i><a title="Email us"
+                    href="mailto:info@ggcokara.edu.pk">info@ggcokara.edu.pk</a>
             </div>
             <div>
-                <a href="https://www.facebook.com/gpgcokara/" class="me-3" aria-label="Facebook"><i
+                <a href="https://www.facebook.com/gpgcokara/" class="me-3" title="Facebook"><i
                         class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/ggcokara/" class="me-3" aria-label="Instagram"><i
+                <a href="https://www.instagram.com/ggcokara/" class="me-3" title="Instagram"><i
                         class="fab fa-instagram"></i></a>
             </div>
         </div>
@@ -94,25 +95,27 @@
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="/">
                 <!-- Ensure you have a logo.png or text shows up -->
-                <img src="/src/img/logo.webp" alt="GPC Logo">
+                <img src="/src/img/logo.webp" class="GPCLOGO" title="GPC Logo" alt="GPC Logo">
                 <div class="brand-text ms-2">
-                    <h1>Govt. Graduate College</h1>
+                    <h1 title="Govt. Graduate College">Govt. Graduate College</h1>
                     <span>Okara • Est. 1958</span>
                 </div>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="navbarNav" aria-expanded="false" title="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto align-items-center">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/courses/">Courses</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/admissions/">Admissions</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/gallery/">Gallery</a></li>
-                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
-                        <a href="/contact/" class="btn btn-admissions">Apply Now</a>
+                    <li title="Current Page" class="nav-item"><a class="nav-link active" aria-current="page"
+                            href="/">Home</a></li>
+                    <li title="See About" class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                    <li title="See Courses" class="nav-item"><a class="nav-link" href="/courses/">Courses</a></li>
+                    <li title="See admissions" class="nav-item"><a class="nav-link"
+                            href="/admissions/">Admissions</a></li>
+                    <li title="See Gallery" class="nav-item"><a class="nav-link" href="/gallery/">Gallery</a></li>
+                    <li title="" class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a href="/contact/" title="Apply Now" class="btn btn-admissions">Apply Now</a>
                     </li>
                 </ul>
             </div>
@@ -132,9 +135,11 @@
                         Building character and careers for over 6 decades.
                     </p>
                     <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
-                        <a href="/courses/" class="btn btn-light text-success fw-bold px-4 py-3 hero-btn shadow">Explore
+                        <a title="Explore Our Programs" href="/courses/"
+                            class="btn btn-light text-success fw-bold px-4 py-3 hero-btn shadow">Explore
                             Programs</a>
-                        <a href="/contact/" class="btn btn-outline-light fw-bold px-4 py-3 hero-btn">Contact Us</a>
+                        <a title="Contact Now" href="/contact/"
+                            class="btn btn-outline-light fw-bold px-4 py-3 hero-btn">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -145,7 +150,8 @@
     <div class="ticker-wrap">
         <div class="ticker-label"><i class="fas fa-bell me-2"></i> Notice Board</div>
         <div class="ticker-content">
-            <div class="ticker-item"><i class="fas fa-bullhorn text-warning me-2"></i> <strong>Admissions Open: </strong>
+            <div class="ticker-item"><i class="fas fa-bullhorn text-warning me-2"></i> <strong>Admissions Open:
+                </strong>
                 Fall This year applications for BS Programs are now live.</div>
             <div class="ticker-item"><i class="fas fa-calendar-check text-warning me-2"></i> <strong>Exam
                     Alert: </strong> Intermediate send-up exams start next Monday.</div>
@@ -193,8 +199,8 @@
                 <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
                     <div class="about-img-wrapper">
                         <!-- Added loading="lazy" for performance -->
-                        <img src="/src/img/main-department.webp" loading="lazy" class="img-fluid shadow"
-                            alt="GPC Campus Building">
+                        <img title="College Main Campus Building" src="/src/img/main-department.webp" loading="lazy"
+                            class="img-fluid shadow" alt="GPC Campus Building">
                     </div>
                 </div>
                 <div class="col-lg-6" data-aos="fade-left">
@@ -223,14 +229,17 @@
                         </div>
                         <div class="col-6">
                             <ul class="list-unstyled">
-                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Physical+Digital Library
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Physical+Digital
+                                    Library
                                 </li>
-                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Sports+Political Complexes etc.
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Sports+Political
+                                    Complexes etc.
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <a href="/about/#moto" class="btn btn-outline-success mt-3 rounded-pill px-4">Read Principal's
+                    <a title="Click To Read Principal's Message" href="/about/#moto"
+                        class="btn btn-outline-success mt-3 rounded-pill px-4">Read Principal's
                         Message</a>
                 </div>
             </div>
@@ -335,24 +344,27 @@
             <div class="row g-3">
                 <div class="col-md-4 col-sm-6" data-aos="flip-left">
                     <div class="gallery-item shadow">
-                        <img src="/src/img/001.webp" loading="lazy" alt="College Sports Gala">
+                        <img title="A Moment Of Sports Gala" src="/src/img/001.webp" loading="lazy"
+                            alt="College Sports Gala">
                         <div class="gallery-overlay">Sports Gala</div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6" data-aos="flip-left" data-aos-delay="100">
                     <div class="gallery-item shadow">
-                        <img src="/src/img/004.webp" loading="lazy" alt="College Library">
+                        <img title="A Moment Of Central  library" src="/src/img/004.webp" loading="lazy"
+                            alt="College Library">
                         <div class="gallery-overlay">Central Library</div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12" data-aos="flip-left" data-aos-delay="200">
                     <div class="gallery-item shadow">
-                        <img src="/src/img/005.webp" loading="lazy" alt="Science Labs">
+                        <img title="A Moment Of Science Labs" src="/src/img/005.webp" loading="lazy" alt="Science Labs">
                         <div class="gallery-overlay">Science Labs</div>
                     </div>
                 </div>
             </div>
-            <a href="/gallery/" class="btn btn-outline-success mw-fit mx-auto mt-3 rounded-pill px-4">View Gallery
+            <a title="See Gallery " href="/gallery/"
+                class="btn btn-outline-success mw-fit mx-auto mt-3 rounded-pill px-4">View Gallery
             </a>
         </div>
     </section>
@@ -369,9 +381,9 @@
                         excellence. Join us to shape your future.
                     </p>
                     <div class="footer-social mt-3">
-                        <a href="https://www.facebook.com/gpgcokara" aria-label="Facebook"><i
+                        <a href="https://www.facebook.com/gpgcokara" title="Facebook"><i
                                 class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/ggcokara" aria-label="Instagram"><i
+                        <a href="https://www.instagram.com/ggcokara" title="Instagram"><i
                                 class="fab fa-instagram"></i></a>
                     </div>
                 </div>
@@ -379,16 +391,16 @@
                 <!-- Links Widget -->
                 <div class="col-lg-2 col-md-6 mb-4">
                     <h4>Quick Links</h4>
-                    <a href="/" class="d-block mb-2">Home</a>
-                    <a href="/about/" class="d-block mb-2">About Us</a>
-                    <a href="/courses/" class="d-block mb-2">Programs</a>
-                    <a href="/gallery/" class="d-block mb-2">Gallery</a>
-                    <a href="/contact/" class="d-block mb-2">Contact</a>
+                    <a title="Current Page" href="/" class="d-block mb-2">Home</a>
+                    <a title="See About Page" href="/about/" class="d-block mb-2">About Us</a>
+                    <a title="See Performance Page" href="/courses/" class="d-block mb-2">Programs</a>
+                    <a title="See Gallery Page" href="/gallery/" class="d-block mb-2">Gallery</a>
+                    <a title="See Contact Page" href="/contact/" class="d-block mb-2">Contact</a>
                 </div>
 
                 <!-- Admissions Widget -->
                 <div class="col-lg-2 col-md-6 mb-4">
-                    <h4>Admissions</h4>
+                    <h4 title="Visit Admission Page To See Criteria">Admissions</h4>
                     <a href="/admissions/#apply" class="d-block mb-2">How to Apply</a>
                     <a href="/admissions/#fee" class="d-block mb-2">Fee Structure</a>
                     <a href="/admissions/#lists" class="d-block mb-2">Merit Lists</a>
@@ -408,12 +420,13 @@
         </div>
         <div class="text-center py-4 border-top border-secondary mt-3">
             <small>&copy; 2026 Govt. Graduate College Okara. All Rights Reserved. <br> Made 💓 By
-                <a href="https://mramzanch.blogspot.com/">M Ramzan Ch</a></small>
+                <a title="&fz=14px;This Website Is Mantain
+By &fw=700;&cl=#f44234;M Ramzan Ch&cl;&fw; 
+A Sutdent Of This Institute&fx;" href="https://mramzanch.blogspot.com/">M Ramzan Ch</a></small>
         </div>
     </footer>
 
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/gh/MegaMind-Solution/toaster@main/src/toaster.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -458,6 +471,8 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     </script>
+    <script src="/src/init.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/MegaMind-Solution/toaster@jsdeliver/src/toaster.js"></script>
 </body>
 
 </html>

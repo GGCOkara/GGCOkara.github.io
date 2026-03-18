@@ -132,8 +132,20 @@ body {
     transition: transform 0.3s;
 }
 
-.navbar-brand:hover img {
-    transform: rotate(-5deg);
+.GPCLOGO:hover {
+  animation: ani3 2s linear;
+}
+
+@keyframes ani3 {
+  0% {
+    rotate: 0deg;
+    scale: 1;
+  }
+
+  100% {
+    rotate: 360deg;
+    scale: 0;
+  }
 }
 
 .brand-text h1 {
