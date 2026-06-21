@@ -47,6 +47,7 @@
     }
   ],
   "prefer_related_applications": true,
+
   "shortcuts": [
     {
       "name": "About Us",
@@ -65,28 +66,6 @@
       "icons": [
         {
           "src": "./src/icon/128.png",
-          "type": "image/png",
-          "sizes": "192x192"
-        }
-      ]
-    },
-    {
-      "name": "Developer",
-      "url": "/mramzanch",
-      "icons": [
-        {
-          "src": "./src/icon/mramzanch.png",
-          "type": "image/png",
-          "sizes": "192x192"
-        }
-      ]
-    },
-    {
-      "name": "Maintainor",
-      "url": "/mrc/",
-      "icons": [
-        {
-          "src": "./src/icon/mrc.png",
           "type": "image/png",
           "sizes": "192x192"
         }
